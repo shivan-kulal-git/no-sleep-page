@@ -23,14 +23,14 @@ Live site: https://nosleepnow.com
 ## Folder Structure (Important)
 
 The **code file and the `assets/` folder must be in the same directory**.
-
+```
 project-root/
-  ├── index.php
-  └── assets/
-      ├── image1.jpg
-      ├── image2.webp
-      └── video1.mp4
-
+    ├── index.php
+    └── assets/
+          ├── image1.jpg
+          ├── image2.webp
+          └── video1.mp4
+```
 
 The application automatically scans the `assets/` folder and loads supported files.
 
@@ -67,15 +67,18 @@ To enable it:
 ```php
 define('RECAPTCHA_SITE_KEY', 'YOUR_SITE_KEY');
 define('RECAPTCHA_SECRET_KEY', 'YOUR_SECRET_KEY');
+```
 
 3. Update the frontend usage:     
+```php
 grecaptcha.execute('YOUR_SITE_KEY', { action: 'page_view' });
 
-grecaptcha.execute('YOUR_SITE_KEY', { action: 'page_view' });
+grecaptcha.execute('YOUR_SITE_KEY', { action: 'page_view' }); 
+```
 If reCAPTCHA is not configured, the page will continue to work normally.
 
 Browser Notes
 
- . Chrome / Edge / Brave: Full Wake Lock support
- . Firefox / Safari: Wake Lock behavior may be limited by browser or OS policies
+1. Chrome / Edge / Brave: Full Wake Lock support
+2. Firefox / Safari: Wake Lock behavior may be limited by browser or OS policies
 
