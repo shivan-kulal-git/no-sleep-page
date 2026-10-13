@@ -3,12 +3,6 @@ declare(strict_types=1);
 
 /*
  * No-Sleep | Keep Awake
- *
- * This version contains no API secrets.
- * The reCAPTCHA integration was removed because its server-side score was
- * not used to protect any action. Google AdSense publisher IDs and reCAPTCHA
- * site keys are public identifiers, not secrets; private keys must never be
- * committed to GitHub.
  */
 
 header('X-Frame-Options: DENY');
